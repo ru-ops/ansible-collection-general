@@ -16,7 +16,11 @@ if [ -n "$(git status --porcelain | grep -v publish.sh)" ]; then
   exit 2
 fi
 
-git tag ${COLLECTION_VERSION}
-git push origin ${COLLECTION_VERSION}
+: ${CI=}
+if [ -z "${CI}" ]; then
+  git tag ${COLLECTION_VERSION}
+  git push origin ${COLLECTION_VERSION}
+fi
+
 ansible-galaxy collection build .
-ansible-galaxy collection publish --token $GALAXY_TOKEN ru-ops-general-${COLLECTION_VERSION}.tar.gz
+ansible-galaxy collection publish --token $GALAXY_TOKEN rusops-general-${COLLECTION_VERSION}.tar.gz
