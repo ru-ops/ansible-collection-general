@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Aleksandr Vzhesnevskiy
+  role_name: ct_mongodb
+  description: Role deploys a MongoDB container from Docker Hub image
+  license: MIT
+  min_ansible_version: "2.12"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+  galaxy_tags:
+    - mongodb
+dependencies: []
+...

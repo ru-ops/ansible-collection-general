@@ -1,0 +1,23 @@
+---
+namespace: ru-ops
+name: general
+version: 0.0.1
+readme: README.md
+authors:
+  - Dmitrii Kashin <dmitrii.kashin@ruops.com>
+description: 'RuOPS base roles and playbooks'
+license:
+  - MIT
+tags:
+  - ruops
+  - common
+dependencies: {}
+repository: 'https://github.com/ru-ops/ansible-collection-general'
+homepage: 'https://ruops.com/ansible'
+issues: 'https://github.com/ru-ops/ansible-collection-general/issues'
+build_ignore:
+  - .gitignore
+  - .yamllint
+  - publish.sh
+  - "*.tar.gz"
+...
