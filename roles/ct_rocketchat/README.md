@@ -1,5 +1,5 @@
 
-# ru-ops.general.ct_rocketchat
+# rusops.general.ct_rocketchat
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 # Requirements
@@ -15,7 +15,7 @@ None
 
 ```
 - name: Deployment of the Rocket.Chat
-  hosts: ru-ops.general.ct_rocketchat
+  hosts: rusops.general.ct_rocketchat
   become: yes
   vars_files:
     - "{{ playbook_dir }}/.../ct_bitnami_mongodb.yml"
@@ -26,9 +26,9 @@ None
       docker_network:
         name: "{{ ct_rocketchat_ct_network_mode }}"
   roles:
-    - role: "ru-ops.general.ct_bitnami_mongodb"
+    - role: "rusops.general.ct_bitnami_mongodb"
     - role: "nginx"
-    - role: "ru-ops.general.ct_rocketchat"
+    - role: "rusops.general.ct_rocketchat"
 ```
 
 # License

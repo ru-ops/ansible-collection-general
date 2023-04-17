@@ -9,7 +9,7 @@
 
 - name: "{{ clickhouse_backup_task_prefix }} Create cron"
   ansible.builtin.include_role:
-    name: ru-ops.general.cron
+    name: rusops.general.cron
   vars:
     cron_default_file: "clickhouse-backup"
     cron_jobs:

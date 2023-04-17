@@ -3,7 +3,7 @@ galaxy_info:
   author: Dmitrii Kashin
   description: configure timezone
   role_name: timezone
-  namespace: ru-ops
+  namespace: rusops
   license: MIT
   min_ansible_version: "2.12"
   platforms:

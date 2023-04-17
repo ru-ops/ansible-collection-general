@@ -1,4 +1,4 @@
-# ru-ops.general.ct_kafka_ui
+# rusops.general.ct_kafka_ui
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -17,7 +17,7 @@ None
     - kafka-ui-server
   become: true
   roles:
-    - role: ru-ops.general.ct_kafka_ui
+    - role: rusops.general.ct_kafka_ui
       ct_kafka_ui_bind_addr: "10.1.2.3"
       ct_kafka_ui_ct_env:
         KAFKA_CLUSTERS_0_NAME: local

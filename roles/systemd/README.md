@@ -1,4 +1,4 @@
-ru-ops.general.systemd
+rusops.general.systemd
 =========
 
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
@@ -17,7 +17,7 @@ Example
 - name: Update nginx upstreams and reload
   hosts: nginx
   roles:
-    - role: ru-ops.general.template
+    - role: rusops.general.template
       template_content: |
         upstream grafana {
             {% for host in groups["monitoring"] %}
@@ -25,7 +25,7 @@ Example
             {% endfor %}
         }
       template_dest: "/etc/nginx/conf.d/grafana_upstream.conf"
-    - role: ru-ops.general.systemd
+    - role: rusops.general.systemd
       systemd_service_name: nginx
       systemd_service_state: reloaded
       systemd_daemon_reload: false
@@ -35,9 +35,9 @@ Example
 Install
 -------
 
-This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/ru-ops/general):
+This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/rusops/general):
 
-`ansible-galaxy collection install ru-ops.general`
+`ansible-galaxy collection install rusops.general`
 
 License
 -------

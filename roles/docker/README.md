@@ -1,4 +1,4 @@
-ru-ops.general.docker
+rusops.general.docker
 ==========
 
 This ansible role installs docker
@@ -25,7 +25,7 @@ Example Playbook
 ```
 - hosts: servers
   roles:
-    - role: ru-ops.general.docker
+    - role: rusops.general.docker
 
 ```
 

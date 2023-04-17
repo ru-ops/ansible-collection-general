@@ -1,7 +1,7 @@
 ---
 - name: "{{ timezone_task_prefix }} Install packages"
   ansible.builtin.include_role:
-    name: ru-ops.general.pkg
+    name: rusops.general.pkg
   vars:
     pkg_install_packages:
       - "tzdata"

@@ -3,7 +3,7 @@ galaxy_info:
   author: Dmitrii Kashin
   description: install pip packages
   role_name: pip_install
-  namespace: ru-ops
+  namespace: rusops
   license: MIT
   min_ansible_version: 2.12
   platforms:

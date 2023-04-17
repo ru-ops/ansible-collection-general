@@ -1,4 +1,4 @@
-# ru-ops.general.user
+# rusops.general.user
 
 Role user aims to configure users in a functional way: the user configuration will be exactly the same, which is described in the config and guaranteed has no side-effects.
 
@@ -59,7 +59,7 @@ Example 1 (short)
       roles:
     
         - tags: [ admins, freehck ]
-          role: ru-ops.general.user
+          role: rusops.general.user
           username: freehck
           give_sudo: yes
           authorized_keys: [ freehck ]
@@ -67,7 +67,7 @@ Example 1 (short)
             - host: all
     
         - tags: [ special, jenkins ]
-          role: ru-ops.general.user
+          role: rusops.general.user
           username: jenkins
           authorized_keys: [ jenkins, jenkins-slave01, jenkins-slave02 ]
           hosts:
@@ -76,7 +76,7 @@ Example 1 (short)
               groups: [ docker ]
     
         - tags: [ testers, tester ]
-          role: ru-ops.general.user
+          role: rusops.general.user
           username: tester
           authorized_keys: [ tester ]
           hosts:
@@ -103,7 +103,7 @@ Example 1 (short)
 Example 2 (with all possible options)
 ----------------
 
-    - role: ru-ops.general.user
+    - role: rusops.general.user
       username: freehck # required
       give_sudo: false
       password: "mysecret"

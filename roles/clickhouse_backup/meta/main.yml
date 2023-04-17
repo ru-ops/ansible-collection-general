@@ -3,7 +3,7 @@ galaxy_info:
   author: "Valentin Gostev"
   description: "Install and manage clickhouse-backup tool"
   role_name: clickhouse_backup
-  namespace: ru-ops
+  namespace: rusops
   license: MIT
   min_ansible_version: "2.12"
   platforms:

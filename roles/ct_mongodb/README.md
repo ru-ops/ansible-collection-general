@@ -1,5 +1,5 @@
 
-# ru-ops.general.ct_mongodb
+# rusops.general.ct_mongodb
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 # Requirements
@@ -14,12 +14,12 @@ None
 # Example playbook
 
 ```
-- hosts: ru-ops.general.ct_mongodb
+- hosts: rusops.general.ct_mongodb
   become: yes
   vars_files:
     - "{{ playbook_dir }}/.../.yml" 
   roles:
-    - role: "ru-ops.general.ct_mongodb"
+    - role: "rusops.general.ct_mongodb"
 ```
 
 # License

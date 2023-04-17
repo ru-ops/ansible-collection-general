@@ -1,4 +1,4 @@
-ru-ops.general.pkg_install
+rusops.general.pkg_install
 =========
 
 This role simply installs a list of packages.
@@ -27,7 +27,7 @@ Example
 - hosts: all
   become: true
   roles:
-    - role: ru-ops.general.pkg_install
+    - role: rusops.general.pkg_install
       pkg_install_packages:
         - tmux
         - screen
@@ -36,9 +36,9 @@ Example
 Install
 -------
 
-This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/ru-ops/general):
+This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/rusops/general):
 
-`ansible-galaxy collection install ru-ops.general`
+`ansible-galaxy collection install rusops.general`
 
 License
 -------

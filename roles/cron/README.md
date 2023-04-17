@@ -1,4 +1,4 @@
-ru-ops.general.cron
+rusops.general.cron
 =========
 
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
@@ -15,7 +15,7 @@ Example Playbook
 ----------------
 
 ```
-- role: ru-ops.general.cron
+- role: rusops.general.cron
   cron_default_file: "backups"
   cron_jobs:
     - name: "backup database"

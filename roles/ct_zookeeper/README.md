@@ -1,4 +1,4 @@
-# ru-ops.general.ct_zookeeper
+# rusops.general.ct_zookeeper
 This role deploys Docker containers with [Apache Zookeeper](https://zookeeper.apache.org)
 
 # Requirements
@@ -54,7 +54,7 @@ Playbook to deploy Zookeeper cluster on these host will be:
 - hosts: [zk1, zk2, zk3]
   become: yes
   roles:
-    - role: ru-ops.general.ct_zookeeper
+    - role: rusops.general.ct_zookeeper
       ct_zookeeper_zookeeper_nodes:
         - host: zk1
           bind_ip: "{{ hostvars['zk1'].backnet_ip }}"

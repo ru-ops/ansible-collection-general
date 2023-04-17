@@ -1,4 +1,4 @@
-ru-ops.general.flush_handlers
+rusops.general.flush_handlers
 =========
 
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
@@ -17,15 +17,15 @@ Example
 - name: Flush handlers
   hosts: all
   roles:
-    - role: ru-ops.general.flush_handlers
+    - role: rusops.general.flush_handlers
 ```
 
 Install
 -------
 
-This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/ru-ops/general):
+This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/rusops/general):
 
-`ansible-galaxy collection install ru-ops.general`
+`ansible-galaxy collection install rusops.general`
 
 License
 -------

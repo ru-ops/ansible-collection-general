@@ -1,4 +1,4 @@
-# ru-ops.general.ct_minio
+# rusops.general.ct_minio
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -17,7 +17,7 @@ None
     - minio-server
   become: true
   roles:
-    - role: ru-ops.general.ct_minio
+    - role: rusops.general.ct_minio
       ct_minio_bind_addr: "127.0.0.1"
       ct_minio_env_minio_root_user: root
       ct_minio_env_minio_root_password: "123qwe123qwe"

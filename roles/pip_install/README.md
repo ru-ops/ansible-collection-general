@@ -1,4 +1,4 @@
-ru-ops.general.pip
+rusops.general.pip
 =========
 
 Install pip packages.
@@ -21,7 +21,7 @@ Example
 - hosts: all
   become: true
   roles:
-    - role: ru-ops.general.pip
+    - role: rusops.general.pip
       pip_install_packages:
         - docker
       pip_install_state: "present"
@@ -30,9 +30,9 @@ Example
 Install
 -------
 
-This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/ru-ops/general):
+This role is part of [Ansible Galaxy collection](https://galaxy.ansible.com/rusops/general):
 
-`ansible-galaxy collection install ru-ops.general`
+`ansible-galaxy collection install rusops.general`
 
 License
 -------
